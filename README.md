@@ -27,3 +27,28 @@ dotnet tool install --global dotnet-ef
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
+
+### Connection string
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=GraphRM;User Id=sa;Password=yourStrong(!)Password;"
+  }
+}
+```
+
+
+# Frontend; Angular (Will be using Apollo Client)
+
+```bash 
+ng new GraphRM
+cd GraphRM
+ng add apollo-angular
+```
+
+### Using Apollo Client
+
+```bash
+ng add apollo-angular
+```

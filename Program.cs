@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 
 // fore db context
 builder.Services.AddDbContext<LibraryDbContext>(options => {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("LibraryDbConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 // for graphql
